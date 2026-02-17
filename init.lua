@@ -13,6 +13,13 @@ vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
 
+
+vim.opt.tabstop = 4        
+vim.opt.shiftwidth = 4     
+vim.opt.expandtab = true   
+vim.opt.softtabstop = 4    
+
+
 -- load plugins
 require("lazy").setup({
   {

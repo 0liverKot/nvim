@@ -1,6 +1,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "pyright" }
+local servers = { "clangd", "html", "cssls", "pyright" }
 vim.lsp.enable(servers)
 
 vim.o.updatetime = 300
