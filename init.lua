@@ -1,6 +1,5 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
-
 vim.opt.clipboard = "unnamedplus"
 
 -- bootstrap lazy and all plugins
@@ -14,13 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local lazy_config = require "configs.lazy"
-
-
-vim.opt.tabstop = 4        
-vim.opt.shiftwidth = 4     
-vim.opt.expandtab = true   
-vim.opt.softtabstop = 4    
-
 
 -- load plugins
 require("lazy").setup({
@@ -42,6 +34,9 @@ require "options"
 require "autocmds"
 require "custom.init"
 
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
 
 vim.schedule(function()
   require "mappings"
